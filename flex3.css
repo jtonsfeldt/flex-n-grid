@@ -1,0 +1,46 @@
+main {
+  
+    display:flex;
+    box-sizing: border-box;
+    gap:40px;
+
+    border:solid 1px black;
+    height:100vh;
+    overflow:auto;
+    background-color: aquamarine;
+    flex-direction: row;
+    
+  
+    flex-wrap:nowrap;
+  /*
+    
+    align-items: center;
+    scroll-snap-type:both mandatory;
+    padding-left:40vw;
+    padding-right:40vw;
+    */
+}
+
+main > div {
+  display:flex;
+  min-width: 50vw;
+  height:50vh;
+  background-color: beige;
+justify-content: center;
+align-items: center;}
+
+img {
+/*flex:1;
+height: 50vh;
+flex: grow 4;*/
+width:100%;
+height:100%;
+object-fit: cover;
+
+
+
+
+}
+
+
+body {margin:0 auto;}
