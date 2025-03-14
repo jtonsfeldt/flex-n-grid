@@ -1,9 +1,62 @@
-main {display:flex;
-    box-sizing: border-box;
-    gap:20px;
-}
+body {
+    margin: auto 0; /* Centers the body content vertically */
+    display: grid; /* Uses CSS Grid layout */
+  
+    grid-template-columns: 1fr 8fr 1fr; /* Defines the column sizes */
+    
+    gap: 0px; /* No gap between grid items */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  header {
+  
+    display: flex; /* Uses Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    writing-mode: vertical-rl; /* Rotates text vertically */
+    text-orientation: mixed; /* Mixed text orientation */
+    border: solid 1px lightslategrey; /* Right border */
+  }
+  
+  footer {
 
-img {
-/*flex:1;*/
-max-height: 100vh;
-}
+    display: flex; /* Uses Flexbox layout */
+    flex-direction:column;
+    justify-content: space-evenly; /* Centers content horizontally */
+    align-items: center;
+    border: solid 1px lightslategray; /* Top border */
+    padding: 20px; /* Padding inside the footer */
+    gap:10px;
+  }
+  
+  main {
+ 
+    display: flex; /* Uses Flexbox layout */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    gap: 100px; /* Space between flex items */
+    overflow: auto; /* Adds scrollbars if content overflows */
+    flex-direction: column; 
+    //flex-wrap: wrap; /* Prevents flex items from wrapping */
+    padding: 40px; /* Padding inside the main content area */
+    align-items:center;
+  }
+  
+  main > div {
+    display: flex; /* Uses Flexbox layout */
+
+    background-color: beige; /* Background color */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 90%; /* Minimum width to fit content */
+    height: auto; /* Full height */
+    flex-grow: 1; /* Allows the div to grow and take up available space */
+    z-index: -1; /* Places the div behind other elements */
+  }
+  
+  img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: contain; /* Scales the image to fit within the container */
+    flex-grow: 1; /* Allows the image to grow and take up available space */
+  }
+  
